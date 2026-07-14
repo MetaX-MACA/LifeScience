@@ -1,4 +1,4 @@
-# Copyright (c) 2026 MetaX Integrated Circuits (Shanghai) Co., Ltd. All rights reserved.
+
 
 # 沐曦GPU运行ProteinBERT说明文档
 
@@ -186,3 +186,8 @@ CMD ["/bin/bash"]
 - [ProteinBERT论文](https://academic.oup.com/bioinformatics/article/38/8/2102/6502274)
 
 如遇沐曦GPU环境相关问题，可在[沐曦开发者论坛](https://developer.metax-tech.com/forum/)留言咨询。
+
+本文档仅提供相关软件的配置与使用说明，不包含亦不分发前述软件的源代码或目标代码，且不涉及对其源代码的任何修改。您按照本文档配置、部署或使用相关软件时，应遵守适用许可证规定的条款及条件。相关软件的源代码、许可证全文、版权与归属声明及其他项目文档，请以其官方网站或原始发布页面为准。
+
+
+# Copyright (c) 2026 MetaX Integrated Circuits (Shanghai) Co., Ltd. All rights reserved.

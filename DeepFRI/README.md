@@ -1,5 +1,4 @@
-# Copyright (c) 2026 MetaX Integrated Circuits (Shanghai) Co., Ltd. All rights reserved.
-
+﻿
 # 沐曦GPU运行DeepFRI说明文档
 
 ## 一、DeepFRI简介
@@ -184,3 +183,9 @@ RUN cd /opt/DeepFRI && conda run -n base pip install .
 2. 在曦云GPU的运行DeepFRI，依赖沐曦提供的tensorflow镜像，开发者亦可以在开发者社区提供的基础镜像上直接安装沐曦提供的tensorflow whl包进行测试。
 3. 沐曦仅维护部分case的正确性，如出现运行问题，可提交issue，亦可以在开发者社区提交bug反馈。
 4. 了解更多沐曦开源项目，请参考[沐曦开源社区](https://github.com/metax-maca)
+
+本文档仅提供相关软件的配置与使用说明，不包含亦不分发前述软件的源代码或目标代码，且不涉及对其源代码的任何修改。您按照本文档配置、部署或使用相关软件时，应遵守适用许可证规定的条款及条件。相关软件的源代码、许可证全文、版权与归属声明及其他项目文档，请以其官方网站或原始发布页面为准。
+
+
+# Copyright (c) 2026 MetaX Integrated Circuits (Shanghai) Co., Ltd. All rights reserved.
+
