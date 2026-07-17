@@ -14,6 +14,7 @@
 | :--- | :--- | :--- |
 | **[ProteinBert](https://github.com/MetaX-MACA/LifeScience/tree/main/ProteinBert)** | 基于BERT架构的蛋白质语言模型，可用于蛋白质序列特征提取、功能预测等任务。 | 蛋白质表征学习 |
 | **[DeepFRI](https://github.com/MetaX-MACA/LifeScience/tree/main/DeepFRI)** | 结合蛋白质序列和结构信息的深度学习模型，用于基因本体（GO）功能注释。 | 蛋白质功能预测 |
+| **[BioT5+](https://github.com/MetaX-MACA/LifeScience/tree/main/BioT5+)** | 面向生物与化学领域的多模态预训练语言模型，统一建模自然语言、蛋白质序列、分子SELFIES和IUPAC名称，并通过多任务指令微调提升泛化能力。 | 生命科学基础模型 |
 
 > 更多模型和应用正在持续适配与添加中，敬请关注。
 
@@ -27,6 +28,7 @@
 | :--- | :--- | :--- | :--- |
 | **ProteinBert** | 蛋白质序列表征与功能预测 | BERT、Transformer、预训练语言模型 | 蛋白质属性预测、突变效应分析、序列表示学习 |
 | **DeepFRI** | 蛋白质功能注释（GO term预测） | GCN（图卷积网络）、LSTM、蛋白质结构信息（接触图） | 大规模蛋白质功能注释、新发现蛋白质的功能推断 |
+| **BioT5+** | 分子理解与生成、反应预测、蛋白质功能理解与设计 | T5编码器-解码器 | 分子描述生成、文本引导分子设计、化学反应预测、蛋白质功能分析与序列设计 |
 
 ---
 
