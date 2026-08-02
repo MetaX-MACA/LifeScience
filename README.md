@@ -15,6 +15,8 @@
 | **[ProteinBert](https://github.com/MetaX-MACA/LifeScience/tree/main/ProteinBert)** | 基于BERT架构的蛋白质语言模型，可用于蛋白质序列特征提取、功能预测等任务。 | 蛋白质表征学习 |
 | **[DeepFRI](https://github.com/MetaX-MACA/LifeScience/tree/main/DeepFRI)** | 结合蛋白质序列和结构信息的深度学习模型，用于基因本体（GO）功能注释。 | 蛋白质功能预测 |
 | **[BioT5+](https://github.com/MetaX-MACA/LifeScience/tree/main/BioT5+)** | 面向生物与化学领域的多模态预训练语言模型，统一建模自然语言、蛋白质序列、分子SELFIES和IUPAC名称，并通过多任务指令微调提升泛化能力。 | 生命科学基础模型 |
+| **[Boltz-2](https://github.com/MetaX-MACA/LifeScience/tree/main/Boltz-2)** | 面向生物分子相互作用预测的开放模型，可用于复合物结构预测与结合亲和力相关预测。 | 结构生物学、药物发现 |
+| **[DiffDock](https://github.com/MetaX-MACA/LifeScience/tree/main/DiffDock)** | 基于 diffusion model 的分子对接工具，用于预测小分子 ligand 与 protein receptor 的结合构象。 | 分子对接、药物发现 |
 
 > 更多模型和应用正在持续适配与添加中，敬请关注。
 
@@ -29,6 +31,8 @@
 | **ProteinBert** | 蛋白质序列表征与功能预测 | BERT、Transformer、预训练语言模型 | 蛋白质属性预测、突变效应分析、序列表示学习 |
 | **DeepFRI** | 蛋白质功能注释（GO term预测） | GCN（图卷积网络）、LSTM、蛋白质结构信息（接触图） | 大规模蛋白质功能注释、新发现蛋白质的功能推断 |
 | **BioT5+** | 分子理解与生成、反应预测、蛋白质功能理解与设计 | T5编码器-解码器 | 分子描述生成、文本引导分子设计、化学反应预测、蛋白质功能分析与序列设计 |
+| **Boltz-2** | 复合物结构预测、结合亲和力预测 | Transformer、Diffusion、结构与亲和力联合建模 | 蛋白质-小分子复合物建模、虚拟筛选、药物发现 |
+| **DiffDock** | 小分子-蛋白质分子对接 | Diffusion model、E(3)-equivariant graph neural network | docking pose generation、pose ranking、候选分子对接 |
 
 ---
 
@@ -54,6 +58,7 @@
 
 ## 📝 更新日志
 
+*   **2026-07-30**：新增Boltz-2和DiffDock说明文档，统一使用MACA PyTorch 2.8镜像并补充cuequvariance/cuEquivariance限制说明。
 *   **2026-07-13**：初始版本，包含ProteinBert和DeepFRI模型，并提供了基础的用户指南。
 
 ---
