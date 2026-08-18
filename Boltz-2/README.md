@@ -196,7 +196,42 @@ boltz predict examples/prot.yaml \
   --no_kernels
 ```
 
-## 七、Citation
+## 七、沐曦GPU上Boltz-2精度报告
+
+### 7.1 数据来源
+
+Benchmark来源：[Uni-FEP benchmarks](https://github.com/dptech-corp/Uni-FEP-Benchmarks)，包含 7000+ 蛋白质-小分子的结合自由能测试体系，覆盖 179 个蛋白家族。
+
+在沐曦 C500 GPU 上完成了完整测试，最终的测试结果收集在 [`boltz_results_all.csv`](boltz_results_all.csv) 中。每行对应一个蛋白–配体组合，包含：
+
+- 实验自由能 ΔG（`exp_dG`）；
+- Uni-FEP 物理引擎计算的自由能 ΔG（`fep_dG`）及其配体级蒙特卡洛标准差（`fep_dG_std`）；
+- C500 上通过 Boltz-2 计算的自由能 ΔG（`boltz_dG`），对三次 Boltz-2 重复取均值；标准差列在 `boltz_dG_std`。
+
+| 数据源 | 配体对数 |
+| :--- | ---: |
+| ChEMBL | 6,607 |
+| Merck8 | 231 |
+| JACS8 | 199 |
+| GPCR | 139 |
+| Hermite | 91 |
+| WaterSet | 72 |
+| CyclicPeptide | 34 |
+
+### 7.2 精度分析结论
+
+基于 Uni-FEP-Benchmarks中所有 **7,373** 个蛋白–配体对，进行沐曦GPU上的Boltz-2精度测试。结果如下：
+
+**Boltz-2** 的预测精度为 **Pearson R = 0.72**，RMSE = **1.132 kcal mol⁻¹**。
+各项整体指标符合预期，在这些数据集中与 Uni-FEP 物理引擎的预测精度相当。
+
+完整精度对比如下图所示:
+
+![Boltz-2 修正后预测 vs 实验值](boltz_accuracy_report.png)
+
+---
+
+## 八、Citation
 
 ```bibtex
 @article{passaro2025boltz2,
@@ -208,7 +243,7 @@ boltz predict examples/prot.yaml \
 }
 ```
 
-## 八、维护与支持
+## 九、维护与支持
 
 沐曦仅维护本文档中的 MACA environment 配置说明。Boltz-2 的 model architecture、training、prediction options 与权重发布细节请参考：
 
