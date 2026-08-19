@@ -16,7 +16,12 @@
 | **[DeepFRI](https://github.com/MetaX-MACA/LifeScience/tree/main/DeepFRI)** | 结合蛋白质序列和结构信息的深度学习模型，用于基因本体（GO）功能注释。 | 蛋白质功能预测 |
 | **[BioT5+](https://github.com/MetaX-MACA/LifeScience/tree/main/BioT5+)** | 面向生物与化学领域的多模态预训练语言模型，统一建模自然语言、蛋白质序列、分子SELFIES和IUPAC名称，并通过多任务指令微调提升泛化能力。 | 生命科学基础模型 |
 | **[Boltz-2](https://github.com/MetaX-MACA/LifeScience/tree/main/Boltz-2)** | 面向生物分子相互作用预测的开放模型，可用于复合物结构预测与结合亲和力相关预测。 | 结构生物学、药物发现 |
-| **[DiffDock](https://github.com/MetaX-MACA/LifeScience/tree/main/DiffDock)** | 基于 diffusion model 的分子对接工具，用于预测小分子 ligand 与 protein receptor 的结合构象。 | 分子对接、药物发现 |
+| **[DiffDock](https://github.com/MetaX-MACA/LifeScience/tree/main/DiffDock)** | 基于扩散模型的分子对接工具，用于预测小分子配体与蛋白质受体的结合构象。 | 分子对接、药物发现 |
+| **[ESM3](https://github.com/MetaX-MACA/LifeScience/tree/main/ESM3)** | 面向蛋白质序列、结构与功能建模的基础模型套件，用于蛋白质生成、序列表征和结构预测。 | 蛋白质基础模型、结构预测 |
+| **[OpenFold3](https://github.com/MetaX-MACA/LifeScience/tree/main/OpenFold3)** | 基于 AlphaFold3 风格特征流水线和扩散模型的生物分子结构预测工具，用于蛋白质、核酸和配体复合物的全原子结构预测。 | 结构生物学 |
+| **[OpenDDE](https://github.com/MetaX-MACA/LifeScience/tree/main/OpenDDE)** | 面向生物分子共折叠与药物设计的全原子基础模型，用于结构预测、抗体-抗原建模和药物设计推理。 | 结构预测、药物发现 |
+| **[BoltzGen](https://github.com/MetaX-MACA/LifeScience/tree/main/BoltzGen)** | 基于扩散设计、逆向折叠和折叠重排序的蛋白质设计流水线，用于针对肽、蛋白质和小分子靶点生成并排序结合蛋白。 | 蛋白质设计 |
+| **[Foundry](https://github.com/MetaX-MACA/LifeScience/tree/main/Foundry)** | 面向生物分子结构预测与蛋白质设计的模型集合，用于 RF3 结构预测、RFD3/RFD3NA 设计以及 ProteinMPNN/LigandMPNN 序列设计。 | 结构预测、蛋白质设计 |
 
 > 更多模型和应用正在持续适配与添加中，敬请关注。
 
@@ -29,10 +34,21 @@
 | 模型/应用名称 | 核心任务 | 关键技术/架构 | 适用场景 |
 | :--- | :--- | :--- | :--- |
 | **ProteinBert** | 蛋白质序列表征与功能预测 | BERT、Transformer、预训练语言模型 | 蛋白质属性预测、突变效应分析、序列表示学习 |
-| **DeepFRI** | 蛋白质功能注释（GO term预测） | GCN（图卷积网络）、LSTM、蛋白质结构信息（接触图） | 大规模蛋白质功能注释、新发现蛋白质的功能推断 |
+| **DeepFRI** | 蛋白质功能注释（GO 条目预测） | GCN（图卷积网络）、LSTM、蛋白质结构信息（接触图） | 大规模蛋白质功能注释、新发现蛋白质的功能推断 |
 | **BioT5+** | 分子理解与生成、反应预测、蛋白质功能理解与设计 | T5编码器-解码器 | 分子描述生成、文本引导分子设计、化学反应预测、蛋白质功能分析与序列设计 |
-| **Boltz-2** | 复合物结构预测、结合亲和力预测 | Transformer、Diffusion、结构与亲和力联合建模 | 蛋白质-小分子复合物建模、虚拟筛选、药物发现 |
-| **DiffDock** | 小分子-蛋白质分子对接 | Diffusion model、E(3)-equivariant graph neural network | docking pose generation、pose ranking、候选分子对接 |
+| **Boltz-2** | 复合物结构预测、结合亲和力预测 | Transformer、扩散模型、结构与亲和力联合建模 | 蛋白质-小分子复合物建模、虚拟筛选、药物发现 |
+| **DiffDock** | 小分子-蛋白质分子对接 | 扩散模型、E(3) 等变图神经网络 | 对接构象生成、构象排序、候选分子对接 |
+| **ESM3** | 蛋白质序列、结构与功能生成 | 多模态蛋白质基础模型 | 蛋白质生成、功能注释、结构条件设计 |
+| **ESMC** | 蛋白质序列表征 | Transformer 蛋白质语言模型 | 序列嵌入、掩码标记预测、隐藏状态分析 |
+| **ESMFold2** | 全原子结构预测 | ESMC 嵌入、扩散结构模块 | 蛋白质/DNA/RNA/配体复合物折叠 |
+| **OpenFold3** | 全原子结构预测 | AlphaFold3 风格特征流水线、扩散模型 | 蛋白质、核酸、配体复合物预测 |
+| **OpenDDE** | 共折叠 | 全原子基础模型、扩散模型 | 结构预测、抗体-抗原建模、药物设计 |
+| **BoltzGen** | 结合蛋白设计 | 扩散设计流水线、逆向折叠、折叠重排序 | 面向肽、蛋白质和小分子靶点的结合蛋白设计 |
+| **RoseTTAFold3(RF3)** | 全原子结构预测 | Pairformer、原子条件建模 | 蛋白质-配体、蛋白质-DNA/RNA 复合物预测 |
+| **RFdiffusion3(RFD3)** | 全原子生物分子设计 | 扩散模型 | PPI 结合蛋白、酶、小分子结合蛋白、对称结构设计 |
+| **RFD3NA** | 蛋白质-DNA-RNA 多聚体设计 | RFdiffusion3NA | 核酸结合蛋白与多聚体设计 |
+| **ProteinMPNN** | 固定骨架序列设计 | 消息传递神经网络 | 蛋白质序列重设计 |
+| **LigandMPNN** | 配体感知序列设计 | 基于原子上下文条件的 MPNN | 蛋白质-配体界面序列设计 |
 
 ---
 
@@ -58,7 +74,9 @@
 
 ## 📝 更新日志
 
-*   **2026-07-30**：新增Boltz-2和DiffDock说明文档，统一使用MACA PyTorch 2.8镜像并补充cuequvariance/cuEquivariance限制说明。
+*   **2026-08-19**：新增ESM3/ESMC/ESMFold2、OpenFold3、OpenDDE、BoltzGen、Foundry（RF3、RFD3、RFD3NA、ProteinMPNN、LigandMPNN）适配说明。
+*   **2026-08-18**：更新Boltz-2说明文档。
+*   **2026-07-30**：新增Boltz-2和DiffDock说明文档。
 *   **2026-07-13**：初始版本，包含ProteinBert和DeepFRI模型，并提供了基础的用户指南。
 
 ---
