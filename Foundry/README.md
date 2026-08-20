@@ -255,10 +255,10 @@ docker run -it --rm \
 沐曦仅维护本文档中的 MACA 环境配置说明。Foundry 的模型架构、Hydra 配置、输入 schema、权重注册表和 notebook 流水线请参考：
 
 - [Foundry GitHub](https://github.com/RosettaCommons/foundry)
-- [RF3 README](https://github.com/RosettaCommons/foundry/tree/main/models/rf3)
-- [RFD3 README](https://github.com/RosettaCommons/foundry/tree/main/models/rfd3)
-- [RFD3NA README](https://github.com/RosettaCommons/foundry/tree/main/models/rfd3na)
-- [MPNN README](https://github.com/RosettaCommons/foundry/tree/main/models/mpnn)
+- [RF3 README](https://github.com/RosettaCommons/foundry/tree/production/models/rf3)
+- [RFD3 README](https://github.com/RosettaCommons/foundry/tree/production/models/rfd3)
+- [RFD3NA README](https://github.com/RosettaCommons/foundry/tree/production/models/rfd3na)
+- [MPNN README](https://github.com/RosettaCommons/foundry/tree/production/models/mpnn)
 
 本文档仅提供相关软件的配置与使用说明，不包含亦不分发前述软件的源代码或目标代码；必要的本地安装修改已在文中列出。您按照本文档配置、部署或使用相关软件时，应遵守使用许可证的条款及条件。
 
