@@ -12,16 +12,16 @@
 
 | 子目录 | 项目简介 | 主要领域 |
 | :--- | :--- | :--- |
-| **[ProteinBert](https://github.com/MetaX-MACA/LifeScience/tree/main/ProteinBert)** | 基于BERT架构的蛋白质语言模型，可用于蛋白质序列特征提取、功能预测等任务。 | 蛋白质表征学习 |
-| **[DeepFRI](https://github.com/MetaX-MACA/LifeScience/tree/main/DeepFRI)** | 结合蛋白质序列和结构信息的深度学习模型，用于基因本体（GO）功能注释。 | 蛋白质功能预测 |
-| **[BioT5+](https://github.com/MetaX-MACA/LifeScience/tree/main/BioT5+)** | 面向生物与化学领域的多模态预训练语言模型，统一建模自然语言、蛋白质序列、分子SELFIES和IUPAC名称，并通过多任务指令微调提升泛化能力。 | 生命科学基础模型 |
-| **[Boltz-2](https://github.com/MetaX-MACA/LifeScience/tree/main/Boltz-2)** | 面向生物分子相互作用预测的开放模型，可用于复合物结构预测与结合亲和力相关预测。 | 结构生物学、药物发现 |
-| **[DiffDock](https://github.com/MetaX-MACA/LifeScience/tree/main/DiffDock)** | 基于扩散模型的分子对接工具，用于预测小分子配体与蛋白质受体的结合构象。 | 分子对接、药物发现 |
-| **[ESM3](https://github.com/MetaX-MACA/LifeScience/tree/main/ESM3)** | 面向蛋白质序列、结构与功能建模的基础模型套件，用于蛋白质生成、序列表征和结构预测。 | 蛋白质基础模型、结构预测 |
-| **[OpenFold3](https://github.com/MetaX-MACA/LifeScience/tree/main/OpenFold3)** | 基于 AlphaFold3 风格特征流水线和扩散模型的生物分子结构预测工具，用于蛋白质、核酸和配体复合物的全原子结构预测。 | 结构生物学 |
-| **[OpenDDE](https://github.com/MetaX-MACA/LifeScience/tree/main/OpenDDE)** | 面向生物分子共折叠与药物设计的全原子基础模型，用于结构预测、抗体-抗原建模和药物设计推理。 | 结构预测、药物发现 |
-| **[BoltzGen](https://github.com/MetaX-MACA/LifeScience/tree/main/BoltzGen)** | 基于扩散设计、逆向折叠和折叠重排序的蛋白质设计流水线，用于针对肽、蛋白质和小分子靶点生成并排序结合蛋白。 | 蛋白质设计 |
-| **[Foundry](https://github.com/MetaX-MACA/LifeScience/tree/main/Foundry)** | 面向生物分子结构预测与蛋白质设计的模型集合，用于 RF3 结构预测、RFD3/RFD3NA 设计以及 ProteinMPNN/LigandMPNN 序列设计。 | 结构预测、蛋白质设计 |
+| **[ProteinBert](./ProteinBert)** | 基于BERT架构的蛋白质语言模型，可用于蛋白质序列特征提取、功能预测等任务。 | 蛋白质表征学习 |
+| **[DeepFRI](./DeepFRI)** | 结合蛋白质序列和结构信息的深度学习模型，用于基因本体（GO）功能注释。 | 蛋白质功能预测 |
+| **[BioT5+](./BioT5+)** | 面向生物与化学领域的多模态预训练语言模型，统一建模自然语言、蛋白质序列、分子SELFIES和IUPAC名称，并通过多任务指令微调提升泛化能力。 | 生命科学基础模型 |
+| **[Boltz-2](./Boltz-2)** | 面向生物分子相互作用预测的开放模型，可用于复合物结构预测与结合亲和力相关预测。 | 结构生物学、药物发现 |
+| **[DiffDock](./DiffDock)** | 基于扩散模型的分子对接工具，用于预测小分子配体与蛋白质受体的结合构象。 | 分子对接、药物发现 |
+| **[ESM3](./ESM3)** | 面向蛋白质序列、结构与功能建模的基础模型套件，用于蛋白质生成、序列表征和结构预测。 | 蛋白质基础模型、结构预测 |
+| **[OpenFold3](./OpenFold3)** | 基于 AlphaFold3 风格特征流水线和扩散模型的生物分子结构预测工具，用于蛋白质、核酸和配体复合物的全原子结构预测。 | 结构生物学 |
+| **[OpenDDE](./OpenDDE)** | 面向生物分子共折叠与药物设计的全原子基础模型，用于结构预测、抗体-抗原建模和药物设计推理。 | 结构预测、药物发现 |
+| **[BoltzGen](./BoltzGen)** | 基于扩散设计、逆向折叠和折叠重排序的蛋白质设计流水线，用于针对肽、蛋白质和小分子靶点生成并排序结合蛋白。 | 蛋白质设计 |
+| **[Foundry](./Foundry)** | 面向生物分子结构预测与蛋白质设计的模型集合，用于 RF3 结构预测、RFD3/RFD3NA 设计以及 ProteinMPNN/LigandMPNN 序列设计。 | 结构预测、蛋白质设计 |
 
 > 更多模型和应用正在持续适配与添加中，敬请关注。
 
@@ -49,6 +49,7 @@
 | **RFD3NA** | 蛋白质-DNA-RNA 多聚体设计 | RFdiffusion3NA | 核酸结合蛋白与多聚体设计 |
 | **ProteinMPNN** | 固定骨架序列设计 | 消息传递神经网络 | 蛋白质序列重设计 |
 | **LigandMPNN** | 配体感知序列设计 | 基于原子上下文条件的 MPNN | 蛋白质-配体界面序列设计 |
+| **[Genos](https://github.com/BGI-HangzhouAI/Genos/tree/main/Adaptation)** |专为 DNA 序列分析设计的深度学习模型|Transformer|DNA 序列嵌入提取和核苷酸级别碱基预测服务|
 
 ---
 
